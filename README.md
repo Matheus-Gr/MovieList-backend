@@ -12,7 +12,7 @@ sample of .env file:
 
 ```env
 VITE_API_URL=your_db
-RAILS_ENV=your_production
+RAILS_ENV=your_enviroment
 POSTGRES_HOST=your_db
 POSTGRES_DB=your_production
 POSTGRES_USER=your_user
