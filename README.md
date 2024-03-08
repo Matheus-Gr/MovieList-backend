@@ -1,14 +1,9 @@
 # README
 Project using rails as banckend api, vue as frontend, postgres as datbase and docker to cotainerize
 
-to run this full project, first you need to have this folder structure:
+to run this full project, first you need to have .env and docker-compose.yml on same folder:
 
-.env
-
-docker-compose.yml
-
-sample of .env file:
-
+Sample of .env file:
 ```env
 POSTGRES_HOST=database
 RAILS_ENV=production
@@ -19,8 +14,7 @@ SECRET_KEY_BASE={your_secret_key_base}
 VITE_API_URL=$POSTGRES_HOST
 ```
 
-sample of docker-compose.yml
-
+Sample of docker-compose.yml
 ```yml
 version: '3'
 services:
