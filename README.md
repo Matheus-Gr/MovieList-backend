@@ -25,7 +25,7 @@ sample of docker-compose.yml
 ```yml
 version: '3'
 services:
-  db:
+  database:
     image: postgres:14.2-alpine
     container_name: database
     volumes:
@@ -42,7 +42,6 @@ services:
   backend:
     image: matheusgon/pipipitchu_backend
     container_name: backend
-    build: backend/
     command: "./bin/rails server"
     environment:
       - RAILS_ENV=${RAILS_ENV}
@@ -55,14 +54,13 @@ services:
     volumes:
       - app-storage:/rails/storage
     depends_on:
-      - db
+      - database
     ports:
       - "3000:3000/tcp"
 
   frontend:
     image: matheusgon/pipipitchu_frontend
     container_name: frontend
-    build: frontend/
     ports:
       - "8080:8080"
     depends_on:
