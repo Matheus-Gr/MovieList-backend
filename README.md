@@ -11,14 +11,13 @@ docker-compose.yml
 sample of .env file:
 
 ```env
-VITE_API_URL=your_db
-RAILS_ENV=your_enviroment
-POSTGRES_HOST=your_db
-POSTGRES_DB=your_production
-POSTGRES_USER=your_user
-POSTGRES_PASSWORD=your_password
-RAILS_MASTER_KEY=your_rails_master_key
-SECRET_KEY_BASE=your_rails_secret_key_base
+POSTGRES_HOST=database
+RAILS_ENV=production
+POSTGRES_DB={your_production_data_base}
+POSTGRES_USER={your_data_base_user}
+POSTGRES_PASSWORD={your_data_base_user_password}
+SECRET_KEY_BASE={your_secret_key_base}
+VITE_API_URL=$POSTGRES_HOST
 ```
 
 sample of docker-compose.yml
