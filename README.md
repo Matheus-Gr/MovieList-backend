@@ -4,6 +4,7 @@ Project using rails as banckend api, vue as frontend, postgres as datbase and do
 to run this full project, first you need to have this folder structure:
 
 .env
+
 docker-compose.yml
 
 sample of .env file:
