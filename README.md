@@ -1,10 +1,8 @@
 # README
 Project using rails as banckend api, vue as frontend, postgres as datbase and docker to cotainerize
 
-to run project, first you need to have this folder structure:
+to run this full project, first you need to have this folder structure:
 
-backend
-frontend
 .env
 docker-compose.yml
 
